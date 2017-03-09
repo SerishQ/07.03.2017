@@ -1,0 +1,38 @@
+<html>
+    <head>  
+        <title> 07  </title>
+        
+ </head>
+   <body>
+       <script> 
+    function  array(array1[]) {
+     var array1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];  
+var k = 1;  
+var n = 0;  
+var element;  
+for (var i=0; i<array1.length; i++)  
+{  
+        for (var j=i; j<array1.length; j++)  
+        {  
+                if (array1[i] == array1[j])  
+                 n++;  
+                if (k<n)  
+                {  
+                  k=n;   
+                  element = array1[i];  
+                }  
+        }  
+        n=0;  
+}  
+console.log(element+" ( " +k +" times ) ") ;  
+
+    }
+
+       </script>
+
+
+
+
+
+   </body>
+</html>
